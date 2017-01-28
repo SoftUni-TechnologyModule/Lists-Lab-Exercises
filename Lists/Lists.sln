@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01L. Remove Negatives and Reverse", "01L. Remove Negatives and Reverse\01L. Remove Negatives and Reverse.csproj", "{F61B4F86-5052-4910-9DE8-456309C0B073}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02L. Append Lists", "02L. Append Lists\02L. Append Lists.csproj", "{7278EA2C-ACC8-46BA-9CA3-443CF210FBE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03L. SumAdjacentEqualNumbers", "03L. Sum Adjacent Equal Numbers\03L. SumAdjacentEqualNumbers.csproj", "{2094C134-B492-4759-8355-564095CBFE28}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F61B4F86-5052-4910-9DE8-456309C0B073}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F61B4F86-5052-4910-9DE8-456309C0B073}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F61B4F86-5052-4910-9DE8-456309C0B073}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F61B4F86-5052-4910-9DE8-456309C0B073}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7278EA2C-ACC8-46BA-9CA3-443CF210FBE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7278EA2C-ACC8-46BA-9CA3-443CF210FBE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7278EA2C-ACC8-46BA-9CA3-443CF210FBE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7278EA2C-ACC8-46BA-9CA3-443CF210FBE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2094C134-B492-4759-8355-564095CBFE28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2094C134-B492-4759-8355-564095CBFE28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2094C134-B492-4759-8355-564095CBFE28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2094C134-B492-4759-8355-564095CBFE28}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
