@@ -7,6 +7,11 @@ class SumReversedNumbers
     {
         string nums = Console.ReadLine();
 
+        ReversingNumbers(nums);
+    }
+
+    static void ReversingNumbers(string nums)
+    {
         List<char> separateNums = new List<char>();
 
         separateNums.AddRange(nums);
@@ -18,6 +23,11 @@ class SumReversedNumbers
             reversedNums.Add(separateNums[i]);
         }
 
+        SortingNumbers(reversedNums);
+    }
+
+    static void SortingNumbers(List<char> reversedNums)
+    {
         string[] sortedNums = new string[reversedNums.Count];
         int start = 0;
         for (int i = 0; i < reversedNums.Count; i++)
@@ -28,9 +38,16 @@ class SumReversedNumbers
                 sortedNums[start] += reversedNums[i];
                 start++;
             }
+
             sortedNums[start] += reversedNums[i];
         }
 
+
+        PrintSummedNumbers(sortedNums);
+    }
+
+    static void PrintSummedNumbers(string[] sortedNums)
+    {
         List<long> parsedNums = new List<long>();
 
         for (int i = 0; i < sortedNums.Length; i++)
