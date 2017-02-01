@@ -8,30 +8,36 @@ class RemoveNegativesAndReverse
     {
         List<int> nums = Console.ReadLine().Split(' ').Select(int.Parse).ToList();
 
-        RemoveNegativeNums(nums);
-        
+        Console.WriteLine(string.Join(" ", RemoveNegativeNums(nums)));
     }
 
-    static void RemoveNegativeNums(List<int> nums)
+    static List<int> RemoveNegativeNums(List<int> nums)
     {
-        for (int i = 0; i < nums.Count; i++)
-        {
-            if (nums[i] < 0)
-            {
-                nums.RemoveAt(i);
-                i--;
-            }
-        }
-
-        if (nums.Count != 0)
-        {
-            nums.Reverse();
-            Console.WriteLine(string.Join(" ", nums));
-        }
-        else
+        nums.RemoveAll(x => x < 0);
+        if (nums.Count == 0)
         {
             Console.WriteLine("empty");
         }
+        nums.Reverse();
+        return nums;
+        //    for (int i = 0; i < nums.Count; i++)
+        //    {
+        //        if (nums[i] < 0)
+        //        {
+        //            nums.RemoveAt(i);
+        //            i--;
+        //        }
+        //    }
+
+        //    if (nums.Count != 0)
+        //    {
+        //        nums.Reverse();
+        //        Console.WriteLine(string.Join(" ", nums));
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("empty");
+        //    }
     }
 }
 
