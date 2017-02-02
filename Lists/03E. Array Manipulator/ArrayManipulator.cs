@@ -33,7 +33,7 @@ class ArrayManipulator
                 }
                 else if (command[0] == "shift")
                 {
-                    DisplacementOfNums(nums, command);
+                    nums = DisplacementOfNums(nums, command);
                 }
                 else if (command[0] == "sumPairs")
                 {
@@ -51,6 +51,7 @@ class ArrayManipulator
     static List<int> SummingPairsOfNums(List<int> nums)
     {
         int start = 0;
+
         for (int i = 1; i < nums.Count; i++)
         {
             nums[start] = nums[start] + nums[i];
@@ -65,17 +66,10 @@ class ArrayManipulator
     {
         int index = int.Parse(command[1]);
 
-        List<int> reversedNums = new List<int>();
-        int start = 0;
-        for (int i = 0; i < index; i++)
-        {
-            reversedNums.Add(nums[start]);
-            nums.RemoveAt(start);
-        }
+        List<int> result = nums.Skip(index).ToList();
+        result.AddRange(nums.Take(index).ToArray());
 
-        nums.AddRange(reversedNums);
-
-        return nums;
+        return result;
     }
 
     static void CheckForCoincidence(List<int> nums, string[] command)
